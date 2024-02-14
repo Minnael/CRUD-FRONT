@@ -1,0 +1,18 @@
+.container-forms {
+   width: 330px;  
+   height: 500px;
+
+   margin-left: 7%;
+   margin-top: 12vh;
+   display: flex;
+   flex-direction: column;
+
+   border-radius: 10px;
+   background-color: #333;
+}
+
+.container-forms h1 {
+   margin: auto;
+   font-size: 28px;
+   color: white;
+}

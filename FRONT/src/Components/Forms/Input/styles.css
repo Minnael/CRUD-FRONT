@@ -1,0 +1,16 @@
+.input {
+   width: 100px;
+   margin-left: 15px;
+   margin-top: 20px;
+}
+
+.input label {
+   font-weight: bold;
+}
+
+.input input {
+   width: 290px; 
+   height: 40px;
+   font-size: 17px;
+   color: rgba(255, 255, 255, 0.87);
+}
