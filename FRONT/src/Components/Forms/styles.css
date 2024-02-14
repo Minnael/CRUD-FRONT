@@ -16,3 +16,18 @@
    font-size: 28px;
    color: white;
 }
+
+.button {
+   width: 120px; 
+   margin: auto;
+   margin-top: 30px;
+}  
+
+.button button {
+   width: 120px; 
+   height: 30px;
+   font-size: 17px;
+   text-align: left;
+   background-color: darkred;
+   border-radius: 5px;
+}

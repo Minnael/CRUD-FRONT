@@ -10,6 +10,12 @@
    border-radius: 10px;
 }
 
+.container-tabela h1 {
+   margin: auto;
+   text-align: center;
+   margin-top: 10px;
+}
+
 .container-tabela table {
    margin: auto;
    margin-top: 35px;
@@ -30,3 +36,5 @@
    border-collapse: collapse;
    text-align: center;
 }
+
+
