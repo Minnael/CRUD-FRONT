@@ -11,6 +11,7 @@ import './global.css'
 function App() {
   const [dadosTabela, setDadosTabela] = useState([]);
   const [novoDado, setNovoDado] = useState({nome: '', email: '', fone: '', data_nascimento: ''});
+  const [edit, setEdit] = useState(false)
 
   useEffect(() => {
     carregarDados();
@@ -43,19 +44,35 @@ function App() {
   };
 
   const editarDado = (id) => {
-    axios.put('http://localhost:8800/', novoDado)
+    axios.put(`http://localhost:8800/${id}`, novoDado)
       .then(response => {
         console.log('Dado editado com sucesso!', response.data)
         carregarDados();
+        toast.success('Editado com sucesso!');
       })
       .catch(error => console.log('Erro ao editar dado:', error))
+      setEdit(false)
+      setNovoDado({nome: '', email: '', fone: '', data_nascimento: '' })
   }
 
   return (  
     <div className="container">
       <ToastContainer position="bottom-right" theme="colored"/>
-        <Forms adicionarDado={adicionarDado} setNovoDado={setNovoDado} novoDado={novoDado}/>
-        <Tabela dados={dadosTabela} apagarDados={apagarDados} editarDado={editarDado}/>
+        <Forms 
+          adicionarDado={adicionarDado} 
+          editarDado={editarDado}
+          setNovoDado={setNovoDado} 
+          novoDado={novoDado}
+          edit={edit}
+        />
+
+        <Tabela 
+          dados={dadosTabela} 
+          apagarDados={apagarDados} 
+          editarDado={editarDado} 
+          setNovoDado={setNovoDado}
+          setEdit={setEdit}
+        />
     </div>
   )
 } 

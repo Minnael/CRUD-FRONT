@@ -1,8 +1,7 @@
 import Input from './Input/Input.jsx'
 import './styles.css'
 
-function Forms({adicionarDado, setNovoDado, novoDado}){
-   
+function Forms({adicionarDado, editarDado, setNovoDado, novoDado, edit}){
    return (
       <div className="container-forms">
          <h1>LEARN CRUD</h1>
@@ -32,7 +31,13 @@ function Forms({adicionarDado, setNovoDado, novoDado}){
          />
 
          <div className="button">
-            <button type="button" onClick={() => adicionarDado(novoDado)}>CADASTRAR</button>
+            {
+               edit == false ? (
+                  <button type="button" onClick={() => adicionarDado(novoDado)}>CADASTRAR</button>
+               ) : (
+                  <button type="button" onClick={() => editarDado(novoDado.id)}>CADASTRAR</button>
+               )
+            }
          </div>
       </div>
    )

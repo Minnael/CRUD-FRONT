@@ -1,22 +1,21 @@
+import { useState } from "react";
 import { FaTrash, FaEdit } from "react-icons/fa"
 import Forms from "../Forms/Forms.jsx"
 import './styles.css'
 
-function Tabela({dados, apagarDados}){
-
-   const [dadosDoFormulario, setDadosDoFormulario] = useState({ id: '', nome: '', email: '' });
-
-   const handleEditarClick = (item) => {
-    setDadosDoFormulario(item);
-   };
+function Tabela({dados, apagarDados, setNovoDado, setEdit}){
+   function editarDado(item) {
+      setNovoDado(item)
+      setEdit(true)
+   }
 
    return (
       <div className="container-tabela">
-         <h1>USUÁRIOS CADASTRADOS</h1>
+         <h1>USUÁRIOS CADASTRADOS</h1> 
          {dados.length > 0 ? (
             <>
                <table>
-                  <thead>
+                  <thead>  
                      <tr>
                         <th>NOME</th>
                         <th>EMAIL</th>
@@ -31,7 +30,7 @@ function Tabela({dados, apagarDados}){
                         <td>{item.nome}</td>
                         <td>{item.email}</td>
                         <td>{item.fone}</td>
-                        <td><FaEdit onClick={() => Forms(novoDado={item})}/></td>
+                        <td><FaEdit onClick={() => editarDado(item)}/></td>
                         <td><FaTrash onClick={() => apagarDados(item.id)}/></td>
                      </tr>
                      ))}
