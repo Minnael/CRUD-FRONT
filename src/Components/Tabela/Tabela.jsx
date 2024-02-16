@@ -17,6 +17,7 @@ function Tabela({dados, apagarDados, setNovoDado, setEdit}){
                <table>
                   <thead>  
                      <tr>
+                        <th>ID</th>
                         <th>NOME</th>
                         <th>EMAIL</th>
                         <th>FONE</th>
@@ -27,11 +28,12 @@ function Tabela({dados, apagarDados, setNovoDado, setEdit}){
                   <tbody>
                      {dados.map((item) => (
                      <tr key={item.id}>
+                        <td>{item._id}</td>
                         <td>{item.nome}</td>
                         <td>{item.email}</td>
                         <td>{item.fone}</td>
                         <td><FaEdit onClick={() => editarDado(item)}/></td>
-                        <td><FaTrash onClick={() => apagarDados(item.id)}/></td>
+                        <td><FaTrash onClick={() => apagarDados(item._id)}/></td>
                      </tr>
                      ))}
                   </tbody>

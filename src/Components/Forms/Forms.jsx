@@ -35,7 +35,7 @@ function Forms({adicionarDado, editarDado, setNovoDado, novoDado, edit}){
                edit == false ? (
                   <button type="button" onClick={() => adicionarDado(novoDado)}>CADASTRAR</button>
                ) : (
-                  <button type="button" onClick={() => editarDado(novoDado.id)}>CADASTRAR</button>
+                  <button type="button" onClick={() => editarDado(novoDado._id)}>CADASTRAR</button>
                )
             }
          </div>
