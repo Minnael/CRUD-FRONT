@@ -15,6 +15,12 @@ function App() {
 
   useEffect(() => {
     carregarDados();
+
+    const intervalId = setInterval(() => {
+      window.location.reload();
+    }, 15000);
+    return () => clearInterval(intervalId);
+
   }, []);
 
   const carregarDados = () => {
