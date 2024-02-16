@@ -18,13 +18,13 @@ function App() {
   }, []);
 
   const carregarDados = () => {
-  axios.get('http://localhost:8800/')
+  axios.get('https://crud-node-mongo.vercel.app/')
     .then(response => setDadosTabela(response.data))
     .catch(error => console.error(error));
   };
 
   const adicionarDado = () => {
-    axios.post('http://localhost:8800/', novoDado)
+    axios.post('https://crud-node-mongo.vercel.app/', novoDado)
       .then(response => {
         console.log('Dado adicionado com sucesso:', response.data);
         carregarDados();
@@ -34,7 +34,7 @@ function App() {
   };
 
   const apagarDados = (id) => {
-    axios.delete(`http://localhost:8800/${id}`)
+    axios.delete(`https://crud-node-mongo.vercel.app/${id}`)
       .then(response => {
         console.log('Registro excluído com sucesso:', response.data);
         carregarDados();
@@ -44,7 +44,7 @@ function App() {
   };
 
   const editarDado = (id) => {
-    axios.put(`http://localhost:8800/${id}`, novoDado)
+    axios.put(`https://crud-node-mongo.vercel.app/${id}`, novoDado)
       .then(response => {
         console.log('Dado editado com sucesso!', response.data)
         carregarDados();
