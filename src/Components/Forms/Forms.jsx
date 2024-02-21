@@ -2,9 +2,14 @@ import Input from './Input/Input.jsx'
 import './styles.css'
 
 function Forms({adicionarDado, editarDado, setNovoDado, novoDado, edit}){
+   function adicionar(){
+      adicionarDado(novoDado)
+      setNovoDado({nome: '', email: '', fone: '', data_nascimento: ''})
+   }
+
    return (
       <div className="container-forms">
-         <h1>LEARN CRUD</h1>
+         <h1>CADASTRO</h1>
          <Input 
             name="NOME" 
             value={novoDado.nome} 
@@ -33,7 +38,7 @@ function Forms({adicionarDado, editarDado, setNovoDado, novoDado, edit}){
          <div className="button">
             {
                edit == false ? (
-                  <button type="button" onClick={() => adicionarDado(novoDado)}>CADASTRAR</button>
+                  <button type="button" onClick={() => adicionar()}>CADASTRAR</button>
                ) : (
                   <button type="button" onClick={() => editarDado(novoDado._id)}>CADASTRAR</button>
                )

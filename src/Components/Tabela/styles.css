@@ -11,9 +11,11 @@
 }
 
 .container-tabela h1 {
+   color: tomato;
    margin: auto;
    text-align: center;
    margin-top: 10px;
+   text-decoration: underline;
 }
 
 .container-tabela table {
@@ -42,4 +44,26 @@
    font-size: 18px;
    font-weight: bold;
 }
+
+.caderno {
+   width: 22px; 
+   height: 22px; 
+   object-fit: cover;
+}
+
+.lixeira {
+   width: 17px; 
+   height: 17px; 
+   object-fit: cover;
+   margin-top: 2px;
+}
+
+.caderno :hover {
+   color: green;
+}
+
+.lixeira :hover {
+   color: red;
+}
+
 

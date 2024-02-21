@@ -4,6 +4,10 @@
    margin-top: 20px;
 }
 
+input::placeholder {
+   color: rgba(255, 255, 255, 0.87);
+ }
+
 .input label {
    font-weight: bold;
 }
@@ -12,5 +16,5 @@
    width: 290px; 
    height: 40px;
    font-size: 17px;
-   color: rgba(255, 255, 255, 0.87);
+   border-radius: 12px;
 }

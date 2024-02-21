@@ -32,8 +32,8 @@ function Tabela({dados, apagarDados, setNovoDado, setEdit}){
                         <td>{item.nome}</td>
                         <td>{item.email}</td>
                         <td>{item.fone}</td>
-                        <td><FaEdit onClick={() => editarDado(item)}/></td>
-                        <td><FaTrash onClick={() => apagarDados(item._id)}/></td>
+                        <td><FaEdit className="caderno" onClick={() => editarDado(item)}/></td>
+                        <td><FaTrash className="lixeira" onClick={() => apagarDados(item._id)}/></td>
                      </tr>
                      ))}
                   </tbody>
