@@ -18,7 +18,7 @@ function App() {
 
     const intervalId = setInterval(() => {
       window.location.reload();
-    }, 15000);
+    }, 40000);
     return () => clearInterval(intervalId);
 
   }, []);
