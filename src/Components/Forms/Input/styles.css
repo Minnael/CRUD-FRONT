@@ -46,7 +46,7 @@ input::placeholder {
 }
 
 
-@media screen and (max-height: 768px) and (orientation: landscape) {
+@media screen and (max-width: 768px) and (orientation: landscape) {
    .input {
       width: 78px;
       height: 25px;
