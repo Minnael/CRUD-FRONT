@@ -68,10 +68,60 @@
 
 @media screen and (max-width: 768px) {
    .container-tabela {
-      margin-left: 5px;
-      margin-top: 400px;
-      width: 100px;
-      
+      margin-left: -80px;
+      margin-top: 10px;
+      width: 405px;
+      height: 300px;
+   }
+
+   .container-tabela h1 {
+      color: tomato;
+      margin: auto;
+      font-size: 16px;
+      text-align: center;
+      margin-top: 6px;
+      text-decoration: underline;
+   }
+   
+   .container-tabela table {
+      margin: auto;
+      margin-top: 21px;
+      font-size: 11px;
+      justify-content: auto;
+      width: 356px;
+      height: 120px;
+      max-height: 291px;
+      border-bottom: 1.5px solid white;
+   }  
+   
+   .container-tabela th {
+      border-bottom: 1.5px solid white;
+      font-size: 10px;
+      font-weight: bold;
+   }
+   
+   .container-tabela table, th, td {
+      border-collapse: collapse;
+      text-align: center;
+   }
+   
+   .container-tabela p {
+      text-align: center;
+      font-size: 7px;
+      font-weight: bold;
+   }
+   
+   .caderno {
+      width: 10.6px; 
+      height: 10.6px; 
+      object-fit: cover;
+   }
+   
+   .lixeira {
+      width: 10.6px; 
+      height: 10.6px; 
+      object-fit: cover;
+      margin-top: 2px;
    }
 }
 
