@@ -73,6 +73,7 @@
       margin-left: -40px;
       width: 250px;  
       height: 315px;
+      flex-direction: column;
    }
 
    .container-forms h1 {
