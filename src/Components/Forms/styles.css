@@ -30,14 +30,39 @@
    font-size: 17px;
    text-align: left;
    background-color: red;
-   border-radius: 5px;
+   border-radius: 7px;
+   
 }
 
 @media screen and (max-width: 768px) {
    .container-forms {
-      margin-top: auto;
-      margin-left: auto;
-      width: 330px;  
-      height: 0px;
+      margin-top: 1px;
+      margin-left: -87px;
+      width: 285px;  
+      height: 350px;
    }
+
+   .container-forms h1 {
+      margin: auto;
+      font-size: 18px;
+      color: tomato;
+      text-decoration: underline;
+   }
+   
+   .button {
+      width: 107px; 
+      margin: auto;
+      margin-top: 26px;
+   }  
+   
+   .button button {
+      width: 107px; 
+      height: 26px;
+      font-size: 8px;
+      text-align: center;
+      background-color: red;
+      font-weight: bold;
+      border-radius: 8px;
+   }
+   
 }

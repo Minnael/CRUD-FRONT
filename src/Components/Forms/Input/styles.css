@@ -20,3 +20,27 @@ input::placeholder {
 }
 
 
+@media screen and (max-width: 768px) {
+   .input {
+      width: 89px;
+      height: 30px;
+      margin-left: 13px;
+      margin-bottom: 11px;
+   }
+   
+   input::placeholder {
+      color: rgba(255, 255, 255, 0.87);
+    }
+   
+   .input label {
+      font-size: 10px;
+      font-weight: bold;
+   }
+   
+   .input input {
+      width: 259px; 
+      height: 35px;
+      font-size: 12px;
+      border-radius: 12px;
+   }
+}
