@@ -32,3 +32,12 @@
    background-color: red;
    border-radius: 5px;
 }
+
+@media screen and (max-width: 768px) {
+   .container-forms {
+      margin-top: auto;
+      margin-left: auto;
+      width: 330px;  
+      height: 0px;
+   }
+}

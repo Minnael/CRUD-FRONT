@@ -66,4 +66,15 @@
    color: red;
 }
 
+@media screen and (max-width: 768px) {
+   .container-tabela {
+      margin-left: 5px;
+      margin-top: 400px;
+      width: 100px;
+      
+   }
+}
+
+
+
 
