@@ -1,13 +1,23 @@
 .container {
    width: 1200px;
    display: flex;
-   margin-left: 90px;
 }
 
 @media screen and (max-width: 768px) {
    .container {
       width: 100%;
+      margin-left: 85px;
       flex-direction: column;
    }
 }
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+   .container {
+      width: 100%;
+      flex-direction: row;
+      margin-left: 55px;
+   }
+}
+
+
 

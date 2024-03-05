@@ -66,3 +66,36 @@
    }
    
 }
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+   .container-forms {
+      margin-top: 1px;
+      margin-left: -40px;
+      width: 250px;  
+      height: 315px;
+   }
+
+   .container-forms h1 {
+      margin: auto;
+      font-size: 18px;
+      color: tomato;
+      text-decoration: underline;
+   }
+   
+   .button {
+      width: 94px; 
+      margin: auto;
+      margin-top: 22px;
+   }  
+   
+   .button button {
+      width: 94px; 
+      height: 19px;
+      font-size: 8px;
+      text-align: center;
+      background-color: red;
+      font-weight: bold;
+      border-radius: 8px;
+   }
+   
+}

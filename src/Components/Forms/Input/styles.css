@@ -24,7 +24,7 @@ input::placeholder {
    .input {
       width: 89px;
       height: 30px;
-      margin-left: 13px;
+      margin-left: 8.5px;
       margin-bottom: 11px;
    }
    
@@ -40,7 +40,33 @@ input::placeholder {
    .input input {
       width: 259px; 
       height: 35px;
-      font-size: 12px;
+      font-size: 14px;
+      border-radius: 12px;
+   }
+}
+
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+   .input {
+      width: 78px;
+      height: 25px;
+      margin-left: 7,5px;
+      margin-bottom: 9px;
+   }
+   
+   input::placeholder {
+      color: rgba(255, 255, 255, 0.87);
+    }
+   
+   .input label {
+      font-size: 10px;
+      font-weight: bold;
+   }
+   
+   .input input {
+      width: 227px; 
+      height: 30px;
+      font-size: 14px;
       border-radius: 12px;
    }
 }
